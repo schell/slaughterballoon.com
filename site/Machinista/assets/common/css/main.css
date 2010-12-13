@@ -1,0 +1,30 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+	background: url(http://slaughterballoon.com/SlaughterBalloon-iso.png) fixed bottom left no-repeat;
+	font-family: Verdana,Geneva,Arial,sans-serif;
+	font-size: 10px;
+	line-height: 15px;
+}
+
+body {
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+}
+
+div#content, div#flash_content {
+	height: 100%;
+}
+
+#flash_content {
+	margin: 0 auto;
+}
+
+div#no_script {
+	display: none;
+}
+
+a img {
+	border: none;
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<root>
+	<controller id="user">
+		<character id="tank" >
+			<!-- bodies -->
+			
+			<body id="cart" x="70" y="90" hasMass="1" >
+				<shape type="box" halfWidth="50" halfHeight="15" density="1" friction="1" restitution="0" />
+			</body>
+			
+			<body id="whl1" x="20" y="90" hasMass="1" >
+				<shape type="circle" density="1" friction="1" restitution="0.05" radius="30" uData="gear1" />
+			</body>
+			<body id="whl2" x="120" y="90" hasMass="1" >
+				<shape type="circle" density="1" friction="1" restitution="0.05" radius="30"  uData="gear1" />
+			</body>
+			
+			<!-- joints -->
+			
+			<joint id="left" type="revolute" takesInput="1" body1="whl1" body2="cart" bodyRef="whl1" enableMotor="1" motorSpeed="d:-400:a:400:w:0:s:0" maxMotorTorque="50" destroThreshold="5000" hp="5000">
+					<anchor x="0" y="0" />
+			</joint>
+			<joint id="right" type="revolute" body1="whl2" body2="cart" bodyRef="whl2" enableMotor="1" motorSpeed="d:-400:a:400:w:0:s:0" maxMotorTorque="50" destroThreshold="5000" hp="5000" >
+				<anchor x="0" y="0" />
+			</joint>
+			
+		</character>
+	</controller>
+</root>

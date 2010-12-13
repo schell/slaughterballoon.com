@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<root>
+	<world left="-1000" right="1000" top="1000" bottom="-1000" doSleep="1" >
+		<gravity x="0" y="20" />
+		
+		<!-- walls -->
+			<!-- bottom -->
+			<body x="50%" y="100%" >
+				<shape type="box" halfWidth="50%" halfHeight="10" friction="0.6" />
+			</body>
+			<!-- top -->
+			<body x="50%" y="0" >
+				<shape type="box" halfWidth="50%" halfHeight="10" friction="0.6" />
+			</body>
+			<!-- left -->
+			<body x="0" y="50%" >
+				<shape type="box" halfWidth="10" halfHeight="50%" friction="0.6" />
+			</body>
+			<!-- right -->
+			<body x="100%" y="50%" >
+				<shape type="box" halfWidth="10" halfHeight="50%" friction="0.6" />
+			</body>
+		
+		<!-- box of boxes -->
+		
+			<conglomerate type="stack" cols="3" rows="3" xInc="40" yInc="41">
+				<body x="300" y="88" hasMass="1">
+					<shape type="box" halfWidth="20" halfHeight="20" density="1" friction="1" restitution="0.05" />
+				</body>
+			</conglomerate>
+						
+		<!-- shapes -->
+		
+		<body id="0" x="35%" y="20%"  hasMass="1" >
+			<shape type="circle" radius="10" density="1" friction="1" restitution="0.6" />
+		</body>
+		<body id="1" x="35%" y="25%"  hasMass="1" >
+			<shape type="box" halfWidth="50" halfHeight="10" density="1" friction="0.2" restitution="0.5" />
+		</body>
+		<body id="2" x="25%" y="25%"  hasMass="1" >
+					<shape type="polygon" density="1" friction="1" restitution="0.5">
+						<vertex x="-15" y="0" />
+						<vertex x="-10" y="-10" />
+						<vertex x="10" y="-10" />
+						<vertex x="15" y="0" />
+						<vertex x="10" y="10" />
+						<vertex x="-10" y="10" />
+					</shape>
+				</body>
+				<body id="12" x="25%" y="25%"  hasMass="1" >
+					<shape type="polygon" density="1" friction="1" restitution="0.5">
+						<vertex x="-15" y="0" />
+						<vertex x="-10" y="-10" />
+						<vertex x="10" y="-10" />
+						<vertex x="15" y="0" />
+						<vertex x="10" y="10" />
+						<vertex x="-10" y="10" />
+					</shape>
+				</body>
+				<body id="22" x="25%" y="25%"  hasMass="1" >
+					<shape type="polygon" density="1" friction="1" restitution=".5">
+						<vertex x="-15" y="0" />
+						<vertex x="-10" y="-10" />
+						<vertex x="10" y="-10" />
+						<vertex x="15" y="0" />
+						<vertex x="10" y="10" />
+						<vertex x="-10" y="10" />
+					</shape>
+				</body>
+				<body id="32" x="25%" y="25%"  hasMass="1" >
+					<shape type="polygon" density="1" friction="1" restitution="0.5">
+						<vertex x="-15" y="0" />
+						<vertex x="-10" y="-10" />
+						<vertex x="10" y="-10" />
+						<vertex x="15" y="0" />
+						<vertex x="10" y="10" />
+						<vertex x="-10" y="10" />
+					</shape>
+				</body>
+				<body id="42" x="25%" y="25%"  hasMass="1" >
+					<shape type="polygon" density="1" friction="1" restitution="0.5">
+						<vertex x="-15" y="0" />
+						<vertex x="-10" y="-10" />
+						<vertex x="10" y="-10" />
+						<vertex x="15" y="0" />
+						<vertex x="10" y="10" />
+						<vertex x="-10" y="10" />
+					</shape>
+				</body> 
+			<body id="3" x="5%" y="25%"  hasMass="1" >
+				<shape type="box" halfWidth="50" halfHeight="10" density="1" friction="0.2" restitution="0.5"/>
+			</body>
+			<body id="4" x="25%" y="25%"  hasMass="1" >
+				<shape type="box" halfWidth="15" halfHeight="3" density="1" friction="1" restitution="0.5"/>
+			</body>
+			
+			<body id="14" x="25%" y="25%"  hasMass="1" >
+				<shape type="box" halfWidth="15" halfHeight="3" density="1" friction="1" restitution="0.5"/>
+			</body>
+			
+			<body id="24" x="25%" y="25%"  hasMass="1" >
+				<shape type="box" halfWidth="15" halfHeight="3" density="1" friction="1" restitution="0.5"/>
+			</body>
+			
+			<body id="34" x="25%" y="25%"  hasMass="1" >
+				<shape type="box" halfWidth="15" halfHeight="3" density="1" friction="1" restitution="0.5"/>
+			</body>
+			
+			<body id="44" x="25%" y="25%"  hasMass="1" >
+				<shape type="box" halfWidth="15" halfHeight="3" density="1" friction="1" restitution="0.5" />
+			</body> 
+		
+		
+		<!-- joints -->	
+		
+		
+		<joint type="distance" body1="0" body2="1" collideConnected="1" destroThreshold="10" hp="10000">
+				<anchor x="0" y="0" />
+				<anchor x="0" y="0" />
+			</joint>
+		<joint type="revolute" body1="4" body2="2" bodyRef="2" enableMotor="1" motorSpeed="10" maxMotorTorque="10" uData="joint1" destroThreshold="50" hp="5000">
+			<anchor x="0" y="0" />
+		</joint>
+		<joint type="revolute" body1="14" body2="12" bodyRef="12" enableMotor="1" motorSpeed="100" maxMotorTorque="10" uData="joint1" destroThreshold="50" hp="5000">
+			<anchor x="0" y="0" />
+		</joint>
+		<joint type="revolute" body1="24" body2="22" bodyRef="22" enableMotor="1" motorSpeed="-10" maxMotorTorque="10" uData="joint1" destroThreshold="50" hp="5000">
+			<anchor x="0" y="0" />
+		</joint>
+		<joint type="revolute" body1="34" body2="32" bodyRef="32" enableMotor="1" motorSpeed="20" maxMotorTorque="10" uData="joint1" destroThreshold="50" hp="5000">
+			<anchor x="0" y="0" />
+		</joint>
+		<joint type="revolute" body1="44" body2="42" bodyRef="42" enableMotor="1" motorSpeed="-50" maxMotorTorque="10" uData="joint1" destroThreshold="50" hp="5000">
+			<anchor x="0" y="0" />
+		</joint>
+			 
+
+	</world>
+</root>

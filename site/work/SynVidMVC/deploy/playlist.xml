@@ -1,0 +1,63 @@
+<xml>
+	<widget  campaignID="1" referID="1" placementID="1" 
+		
+		backgroundColor="0xFFFFFF" backgroundAlpha="1.0" 
+		borderColor="0xFF00FF" borderAlpha="1.0"
+		randomizeMedia="true"
+		
+		trackingGateway="http://global.synapsegroup.com/amfphp/gateway.php"
+			
+		sharalityKey = ""
+		sharalityGateway = "http://www.sharality.com/services/amfphp/gateway.php"
+		 >
+		
+		<brand 
+			image="http://global.syndeca.com/bebe/ecatalog/summer09/ext/bebe/imgs/bebeLogo.png" 
+			link="http://slaughterballoon.com"
+		/>
+		
+		<!--
+		<cta 
+			image="http://dev2.synapsegroup.com/syndecavideoplayer/winny.png" 
+			link="http://slaughterballoon.com"
+		/>
+		-->
+		<!-- 
+		<endKeyframe 
+					image="http://dev2.synapsegroup.com/mcafee/assets/thumbs/WardrivingViral.jpg" 
+					link="http://northbaydistro.com"
+		/> 
+		-->
+		<media 
+			title="Long Ass Trailer Title that should wrap and do a bunch of stuff because it is so god damn long it won't fit anywhere espcially not in the title of a movie's thumbnail!" path="http://dev2.synapsegroup.com/mcafee/assets/videos/MiniWardrivingViral.flv" 
+			thumb="http://dev2.synapsegroup.com/mcafee/assets/thumbs/050609_Trailer_FullRez_Mixed_Norm.jpg"
+		/>
+		<media 
+			title="Wardriving" 
+			path="http://dev2.synapsegroup.com/syndecavideoplayer/video.flv" 
+			thumb="http://dev2.synapsegroup.com/mcafee/assets/thumbs/WardrivingViral.jpg"
+		/>
+		<media 
+			title="Spear Phishing"
+			path="http://dev2.synapsegroup.com/mcafee/assets/videos/MiniSpearFishingViral.flv" 
+			thumb="http://dev2.synapsegroup.com/mcafee/assets/thumbs/SpearFishingViral.jpg"
+		/>
+		<media 
+			title="Bank Scraping" 
+			path="http://dev2.synapsegroup.com/mcafee/assets/videos/MiniBankScrapingViral.flv" 
+			thumb="http://dev2.synapsegroup.com/mcafee/assets/thumbs/BankScrapingViral.jpg"
+		/>
+		<media 
+			title="Blue Jacking" 
+			path="http://dev2.synapsegroup.com/mcafee/assets/videos/MiniBlueJackingViral.flv" 
+			thumb="http://dev2.synapsegroup.com/mcafee/assets/thumbs/BlueJackingViral.jpg"
+		/>
+		<!--
+		<media 
+			title="Phone Phreaks" 
+			path="http://dev2.synapsegroup.com/mcafee/assets/videos/MiniPhonePhreaksViral.flv" 
+			thumb="http://dev2.synapsegroup.com/mcafee/assets/thumbs/PhonePhreaksViral.jpg"
+		/>
+		-->
+	</widget>
+</xml>

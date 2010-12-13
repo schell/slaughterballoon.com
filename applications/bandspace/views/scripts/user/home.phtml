@@ -1,0 +1,16 @@
+<a href="/user/upload">Upload</a> | <a href="/user/update">Update Account</a> | <a href="/user/logout">Logout</a>
+<h2>Hello, <?=$this->escape($this->user->name_display);?>.</h2>
+
+<div class="messages">
+	<?php
+		for ($i=0; $i < count($this->messages); $i++) 
+		{ 
+			echo $this->messages[$i] . "<br />";
+		}
+	?>
+</div>
+<br />
+<b><?=$this->user->name_display?></b>:<br />
+joined: <?=$this->user->date_joined?> <br />
+last login: <?=$this->user->date_llogged?> <br />
+total logins: <?=$this->user->num_logs?>

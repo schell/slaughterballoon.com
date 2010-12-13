@@ -1,0 +1,455 @@
+/* CSS for Metro Couriers & Logistics */
+
+html {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+p, form, table {
+	font-size: 9pt;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	border-color: #ffffff;
+}
+body {
+	margin: 0px;
+	margin: 0 0 0 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	line-height: 1.25em;
+	color: #000000;
+}
+h1 {
+	font-size: 11pt;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #0066cc;
+}
+h2 {
+	font-size: 12pt;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-decoration: underline;
+}
+
+/* Links */
+a:link, a:visited, a:active {
+	color: #539077;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	color: #443213;
+	text-decoration: none;
+}
+
+dl, dt, dd {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#body {
+	width: 930px;
+	margin: 0 auto;
+	vertical-align: top;
+}
+#header {
+	width: 930px;
+	background-image: url(images/header.jpg);
+	height: 207px;
+	vertical-align: top;
+}
+#top {
+	text-align: center;
+	width: 930px;
+	background-image: url(images/menu_bg.jpg);
+	background-repeat: repeat-x;
+	height: 41px;
+	vertical-align: top;
+	margin-bottom: 0px;
+}
+#menu {
+	padding: 4px 0 0 45px;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+	padding-top: 8px;
+	padding-left: 10px;
+}
+#menu li {
+	float: left;
+	padding-right: 2.3em;
+	padding-bottom: 8px;
+}
+#menu a:link, #menu a:visited {
+	color: #014ee5;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+}
+#menu a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+#menu li.active a:link, #menu li.active a:visited {
+	color: #000000;
+	font-size: 14px;
+}
+#content-wrap {
+	width: 930px;
+	background-image: url(images/body.png);
+	vertical-align: top;
+}
+#content-wrap_home {
+	width: 930px;
+	background-image: url(images/body.png);
+	height: 625px;
+	vertical-align: top;
+	z-index: -1;
+}
+#content {
+	width: 930px;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#footer {
+	text-align: center;
+	width: 930px;
+	background-image: url(images/footer.png);
+	background-repeat: no-repeat;
+	height: 54px;
+	font-size: 10px;
+	color: #ffffff;
+	z-index: 2;
+}
+#footer a:link, #footer a:visited {
+	color: #ffffff;
+}
+#footer a:hover {
+	color: #443213;
+}
+
+#leftcol {
+	display: block;
+	float: left;
+	width: 230px;
+}
+
+/*Tabbed Box*/
+#tab_left {
+	display: block;
+	width: 230px;
+	padding-top: 5px;
+}
+#tab_leftlow {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #0066cc;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 10px;
+	border-bottom: none;
+}
+div.tab_lefttop {
+	width: 230px;
+	background: #0066cc url(images/tab_right.jpg) no-repeat top right;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 10pt;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+div.tab_lefttop div {
+	background: transparent url(images/tab_left.jpg) no-repeat top left;
+	margin-top: -5px;
+	padding-top: 5px;
+}
+
+div.tab_bot {
+	width: 230px;
+	background: transparent url(images/tab_right_btm.jpg) no-repeat bottom right;
+	margin-bottom: -1px;
+	margin-left: -6px;
+}
+div.tab_bot div {
+	background: transparent url(images/tab_left_btm.jpg) no-repeat bottom left;
+}
+/*End Tabbed Box*/
+
+/*Square Box*/
+#sbox {
+	display: block;
+	width: 230px;
+	background-color: #0066cc;
+	color: #ffffff;
+}
+#rbox {
+	display: block;
+	width: 230px;
+	background-color: #0066cc;
+	color: #ffffff;
+	margin-bottom: 2px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.sboxT {
+	color: #ffffff;
+	font-weight: normal;
+	font-size: 9pt;
+	padding: 3px;
+	padding-left: 20px;
+}
+p.sbox {
+	padding: 3px;
+	color: #ffffff;
+}
+p.title {
+	color: #000000;
+	font-size: 10pt;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-color: #ffffff;
+	margin-left: 5px;
+	margin-right: 5px;
+	}
+/*End Square Box*/
+#centercol {
+	display: block;
+	float: left;
+	width: 450px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.ordertbl {
+	color: #033568;
+	font-size: 12pt;
+	font-weight: bold;
+}
+/*Begin Middle Tabbed Box*/
+#tab_mid {
+	display: block;
+	width: 419px;
+	padding-top: 5px;
+	margin: 0 auto;
+}
+#tab_midlow {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #0066cc;
+	margin-bottom: 15px;
+	border-bottom: none;
+}
+div.tab_midtop {
+	width: 419px;
+	background: #0066cc url(images/tab_right.jpg) no-repeat top right;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 16pt;
+	height: 40px;
+}
+div.tab_midtop div {
+	background: transparent url(images/tab_left.jpg) no-repeat top left;
+	height: 40px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 16pt;
+	padding-bottom: 30px;
+}
+
+div.tab_midbot {
+	width: 419px;
+	background: #0066cc url(images/lgtab_right_btm.jpg) no-repeat bottom right;
+	margin-bottom: 0px;
+	margin-left: -1px;
+	margin-top: -3px;
+	font-size: 8pt;
+}
+div.tab_midbot div {
+	background: transparent url(images/lgtab_left_btm.jpg) no-repeat bottom left;
+}
+.midtbT {
+	color: #ffffff;
+	font-size: 7pt;
+	padding-top: 4px;
+	padding-bottom: 3px;
+}
+/*End Middle Tabbed Box*/
+
+/*Begin middle border box*/
+.bbox {
+	margin: 0 auto;
+	display: block;
+	width: 418px;
+	background-color: #ffffff;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #0066cc;
+	line-height: 1em;
+}
+p.bboxT {
+	padding-left: 5px;
+	line-height: 1em;
+}
+/*End middle border box*/
+
+#rightcol {
+	display: block;
+	float: left;
+	width: 230px;
+}
+/*Begin Mini Box*/
+#tab_mini {
+	display: block;
+	width: 110px;
+	padding-top: 5px;
+	float: left;
+}
+#tab_minilow {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #0066cc;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 15px;
+	border-bottom: none;
+	font-size: 8pt;
+}
+div.tab_minitop {
+	width: 110px;
+	background: #0066cc url(images/tab_right.jpg) no-repeat top right;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 10pt;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+div.tab_minitop div {
+	background: transparent url(images/tab_left.jpg) no-repeat top left;
+	padding-top: 5px;
+	margin-top: -5px;
+}
+
+div.tab_minibot {
+	width: 110px;
+	background: transparent url(images/tab_right_btm.jpg) no-repeat bottom right;
+	margin-bottom: -1px;
+	margin-left: -6px;
+}
+div.tab_minibot div {
+	background: transparent url(images/tab_left_btm.jpg) no-repeat bottom left;
+}
+/*End Mini Box*/
+#col2 {
+	display: block;
+	width: 930px;
+}
+/*Begin Filled Box*/
+#tab_2span {
+	display: block;
+	width: 595px;
+	padding-top: 5px;
+	float: left;
+	background-color: #ececec;
+	margin-top: 10px;
+}
+#tab_2spanlow {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #0066cc;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 0px;
+	border-bottom: none;
+	border-top: none;
+	font-size: 8pt;
+	margin-top: -6px;
+}
+div.tab_2spantop {
+	width: 595px;
+	background: transparent url(images/tab_right_nofill.png) no-repeat top right;
+	color: #000000;
+	font-weight: bold;
+	font-size: 2pt;
+	margin-top: -5px;
+}
+div.tab_2spantop div {
+	background: transparent url(images/tab_left_nofill.png) no-repeat top left;
+}
+div.tab_2spanbot {
+	width: 595px;
+	background: transparent url(images/tab_right_btm.png) no-repeat bottom right;
+	margin-bottom: -1px;
+	margin-left: -6px;
+}
+div.tab_2spanbot div {
+	background: transparent url(images/tab_left_btm.png) no-repeat bottom left;
+	margin-top: -5px;
+}
+/*End Filled Box*/
+
+/*Begin Large Tabbed Box*/
+#tab_lg {
+	display: block;
+	width: 325px;
+	padding-top: 5px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 4px;
+}
+#tab_lglow {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #0066cc;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 10px;
+	border-bottom: none;
+}
+div.tab_lgtop {
+	width: 325px;
+	background: #0066cc url(images/tab_right.jpg) no-repeat top right;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 10pt;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+div.tab_lgtop div {
+	background: transparent url(images/tab_left.jpg) no-repeat top left;
+	padding-top: 5px;
+	margin-top: -5px;
+}
+
+div.tab_lgbot {
+	width: 325px;
+	background: transparent url(images/tab_right_btm.jpg) no-repeat bottom right;
+	margin-bottom: -1px;
+	margin-left: -6px;
+}
+div.tab_lgbot div {
+	background: transparent url(images/tab_left_btm.jpg) no-repeat bottom left;
+}
+/*End Large Tabbed Box*/
+#row3 {
+	display: block;
+	width: 930px;
+	float: left;
+	margin-top: 5px;
+}
